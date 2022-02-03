@@ -1,4 +1,4 @@
-# pilulka-twitter
+# ajtaciopraci/kontejnerizace_e02-instalace_dockeru_na_windows - test aplikace
 Jedná se o jednoduchý agregátor zpráv z Twitteru, který načte zprávy z Twitter API dle zadaných tagů a zobrazí je v HTML, případně je možné přistoupit přes API a zprávy načíst ve formátu JSON.
 
 # Požadavky
