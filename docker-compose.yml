@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build: _docker/apache-php
+    volumes:
+    - .:/var/www/html
+    - ./_docker/apache-php/conf.d/php.ini:/usr/local/etc/php/php.ini
+    - ./_docker/apache-php/conf.d/000-default.conf:/etc/apache2/sites-available/000-default.conf
+
+
+    working_dir: /var/www/html/www
+    networks:
+      - aopdemo
+    ports:
+      - 2022:80
+
+networks:
+  aopdemo:
+    driver: bridge
